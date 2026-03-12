@@ -11,7 +11,7 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Project Name 1",
+    title: "Aakaar",
     description:
       "A brief description of what this project does and the problem it solves. Replace with your actual project details.",
     tags: ["React", "Node.js", "MongoDB"],

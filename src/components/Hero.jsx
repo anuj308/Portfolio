@@ -16,7 +16,7 @@ export default function Hero() {
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
           Hi, I&apos;m{" "}
-          <span className="text-primary">Your Name</span>
+          <span className="text-primary">Anuj kumar sharma</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-3 font-medium">

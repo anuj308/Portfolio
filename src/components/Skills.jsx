@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import {
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiJavascript,
   SiReact,
   SiNextdotjs,
@@ -21,7 +21,7 @@ import {
 
 const skills = [
   { name: "HTML5", icon: SiHtml5, color: "#E34F26", level: 85, category: "Frontend" },
-  { name: "CSS3", icon: SiCss3, color: "#1572B6", level: 80, category: "Frontend" },
+  { name: "CSS3", icon: SiCss, color: "#1572B6", level: 80, category: "Frontend" },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 70, category: "Frontend" },
   { name: "React", icon: SiReact, color: "#61DAFB", level: 65, category: "Frontend" },
   { name: "Next.js", icon: SiNextdotjs, color: "currentColor", level: 60, category: "Frontend" },
