@@ -13,32 +13,35 @@ const projects = [
   {
     title: "Aakaar",
     description:
-      "A brief description of what this project does and the problem it solves. Replace with your actual project details.",
-    tags: ["React", "Node.js", "MongoDB"],
-    github: "https://github.com/",
-    live: "https://your-project.vercel.app",
-    emoji: "🚀",
-    featured: true,
-  },
-  {
-    title: "Project Name 2",
-    description:
-      "Another project description showcasing your skills and what you built.",
-    tags: ["Next.js", "Tailwind CSS", "Prisma"],
-    github: "https://github.com/",
+      "Full-stack Canva-like design editor with an interactive canvas supporting shapes, text, drawings, and images. Built with a Node.js microservices architecture, Auth.js auth, AI image generation, and export options for PNG, SVG, PDF & JSON.",
+    tags: ["Next.js", "React.js", "Node.js", "Fabric.js", "MongoDB", "Cloudinary", "Auth.js"],
+    github: "https://github.com/anuj308",
     live: "",
-    emoji: "🌐",
-    featured: false,
+    emoji: "🎨",
+    featured: true,
+    date: "Feb 2026 – Mar 2026",
   },
   {
-    title: "Project Name 3",
+    title: "ChefAssist",
     description:
-      "Description of the third project with the tech stack used.",
-    tags: ["Python", "Flask", "MySQL"],
-    github: "https://github.com/",
-    live: "https://your-project.vercel.app",
-    emoji: "🤖",
-    featured: false,
+      "AI-powered recipe generator that creates meal ideas from ingredients and dietary preferences. Features streaming GenAI responses, JWT auth, Google OAuth, and Cloudinary image uploads for a production-grade cooking assistant.",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Google Gemini", "Tailwind CSS", "Cloudinary"],
+    github: "https://github.com/Savant261/Flames-2025-Project-ChefAssist",
+    live: "https://chef-assist-frontend.vercel.app/",
+    emoji: "👨‍🍳",
+    featured: true,
+    date: "Jun 2025 – Aug 2025",
+  },
+  {
+    title: "Feedback Form Builder",
+    description:
+      "Full-stack SaaS platform for creating, sharing, and analyzing custom feedback forms. Implemented 30+ REST APIs, JWT + HTTP-only auth, Google OAuth, RBAC, analytics dashboards, filtering, CSV/JSON export, and Docker-based deployment with frontend on Vercel and backend on Render.",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Docker", "JWT Auth", "Google OAuth", "Cloudinary", "Tailwind CSS"],
+    github: "https://github.com/anuj308/feedback",
+    live: "https://formsmadesimple.vercel.app/",
+    emoji: "📝",
+    featured: true,
+    date: "Jul 2024 – Sep 2025",
   },
 ];
 
@@ -76,6 +79,9 @@ export default function Projects() {
                 <CardDescription className="text-sm leading-relaxed">
                   {project.description}
                 </CardDescription>
+                {project.date && (
+                  <p className="text-xs text-muted-foreground mt-1">{project.date}</p>
+                )}
               </CardHeader>
 
               <CardContent className="flex-1 flex flex-col justify-between gap-4 pt-2">

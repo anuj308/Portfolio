@@ -4,19 +4,18 @@ import { Briefcase, CheckCircle2 } from "lucide-react";
 
 const experiences = [
   {
-    role: "Software Development Intern",
-    company: "Company Name",
-    duration: "Month 2024 – Month 2024",
-    type: "Internship",
+    role: "Full Stack Developer Intern",
+    company: "W3Grad",
+    duration: "Jun 2025 – Aug 2025",
+    type: "Industrial Training",
     responsibilities: [
-      "Developed and maintained web features using React and Node.js.",
-      "Collaborated with the design team to implement responsive UI components.",
-      "Optimized database queries, improving API response time by 30%.",
-      "Participated in daily standups and Agile sprint planning meetings.",
-      "Wrote unit tests and contributed to code reviews.",
+      "Completed an Agile-based industrial training with daily Scrum meetings and rotating team leadership roles.",
+      "Worked with Git/GitHub, stand-ups, sprint planning, and full Agile/Scrum workflows across the project lifecycle.",
+      "Built and deployed ChefAssist — a production-grade full-stack MERN application with Google Gemini GenAI integration.",
+      "Implemented JWT authentication, Google OAuth, streaming AI responses, and Cloudinary for optimised image storage.",
+      "Delivered responsive React 19 + Vite frontend with Tailwind CSS and scalable MongoDB schemas on the backend.",
     ],
   },
-  // Add more experiences here
 ];
 
 export default function Experience() {

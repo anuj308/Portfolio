@@ -5,31 +5,25 @@ import { ExternalLink, BookOpen, Award } from "lucide-react";
 
 const certifications = [
   {
-    title: "Certification Name",
-    issuer: "Organization / Platform",
-    date: "Month 2024",
-    credentialLink: "https://your-credential-link.com",
+    title: "JavaScript (Intermediate)",
+    issuer: "HackerRank",
+    date: "Nov 2025",
+    credentialLink: "https://www.hackerrank.com/certificates/c3ad5669dd61",
   },
   {
-    title: "Another Certification",
-    issuer: "Another Platform",
-    date: "Month 2024",
-    credentialLink: "https://your-credential-link.com",
+    title: "SQL (Intermediate)",
+    issuer: "HackerRank",
+    date: "Nov 2025",
+    credentialLink: "https://www.hackerrank.com/certificates/e130acb9cd2d",
   },
 ];
 
 const courses = [
   {
-    title: "Course Name",
-    platform: "Coursera / Udemy / etc.",
-    date: "Month 2024",
-    link: "https://course-link.com",
-  },
-  {
-    title: "Another Course",
-    platform: "Platform Name",
-    date: "Month 2023",
-    link: "https://course-link.com",
+    title: "Full Stack Web Development with GenAI",
+    platform: "W3Grads · Summer Training",
+    date: "Jun 2025 – Aug 2025",
+    link: "https://drive.google.com/file/d/1WtzoWVEsic9THNt3ubgjbMQARmWxjWNG/view",
   },
 ];
 

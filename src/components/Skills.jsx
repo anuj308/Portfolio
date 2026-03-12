@@ -2,42 +2,51 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import {
-  SiHtml5,
-  SiCss,
+  SiCplusplus,
   SiJavascript,
-  SiReact,
-  SiNextdotjs,
-  SiNodedotjs,
   SiPython,
-  SiGit,
+  SiNodedotjs,
+  SiExpress,
+  SiReact,
+  SiRedux,
   SiTailwindcss,
-  SiMongodb,
-  SiMysql,
-  SiC,
-  SiLinux,
-  SiFigma,
+  SiVite,
+  SiNextdotjs,
+  SiGit,
   SiGithub,
+  SiDocker,
+  SiMongodb,
+  SiPostgresql,
+  SiMysql,
+  SiCloudinary,
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
 const skills = [
-  { name: "HTML5", icon: SiHtml5, color: "#E34F26", level: 85, category: "Frontend" },
-  { name: "CSS3", icon: SiCss, color: "#1572B6", level: 80, category: "Frontend" },
-  { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 70, category: "Frontend" },
-  { name: "React", icon: SiReact, color: "#61DAFB", level: 65, category: "Frontend" },
-  { name: "Next.js", icon: SiNextdotjs, color: "currentColor", level: 60, category: "Frontend" },
-  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4", level: 75, category: "Frontend" },
-  { name: "Node.js", icon: SiNodedotjs, color: "#339933", level: 60, category: "Backend" },
-  { name: "Python", icon: SiPython, color: "#3776AB", level: 75, category: "Backend" },
-  { name: "MongoDB", icon: SiMongodb, color: "#47A248", level: 55, category: "Database" },
-  { name: "MySQL", icon: SiMysql, color: "#4479A1", level: 65, category: "Database" },
-  { name: "C", icon: SiC, color: "#A8B9CC", level: 70, category: "Languages" },
-  { name: "Git", icon: SiGit, color: "#F05032", level: 75, category: "Tools" },
-  { name: "GitHub", icon: SiGithub, color: "currentColor", level: 75, category: "Tools" },
-  { name: "Linux", icon: SiLinux, color: "#FCC624", level: 60, category: "Tools" },
-  { name: "Figma", icon: SiFigma, color: "#F24E1E", level: 50, category: "Tools" },
+  // Languages
+  { name: "C++", icon: SiCplusplus, color: "#00599C", level: 80, category: "Languages" },
+  { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 80, category: "Languages" },
+  { name: "Python", icon: SiPython, color: "#3776AB", level: 75, category: "Languages" },
+  { name: "Java", icon: FaJava, color: "#ED8B00", level: 65, category: "Languages" },
+  // Frameworks
+  { name: "Node.js", icon: SiNodedotjs, color: "#339933", level: 75, category: "Frameworks" },
+  { name: "Express.js", icon: SiExpress, color: "currentColor", level: 75, category: "Frameworks" },
+  { name: "React.js", icon: SiReact, color: "#61DAFB", level: 80, category: "Frameworks" },
+  { name: "Next.js", icon: SiNextdotjs, color: "currentColor", level: 70, category: "Frameworks" },
+  { name: "Redux", icon: SiRedux, color: "#764ABC", level: 65, category: "Frameworks" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4", level: 85, category: "Frameworks" },
+  { name: "Vite", icon: SiVite, color: "#646CFF", level: 75, category: "Frameworks" },
+  // Tools / Platforms
+  { name: "Git", icon: SiGit, color: "#F05032", level: 80, category: "Tools" },
+  { name: "GitHub", icon: SiGithub, color: "currentColor", level: 80, category: "Tools" },
+  { name: "Docker", icon: SiDocker, color: "#2496ED", level: 60, category: "Tools" },
+  { name: "MongoDB", icon: SiMongodb, color: "#47A248", level: 75, category: "Tools" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1", level: 65, category: "Tools" },
+  { name: "MySQL", icon: SiMysql, color: "#4479A1", level: 70, category: "Tools" },
+  { name: "Cloudinary", icon: SiCloudinary, color: "#3448C5", level: 70, category: "Tools" },
 ];
 
-const categories = ["Frontend", "Backend", "Database", "Languages", "Tools"];
+const categories = ["Languages", "Frameworks", "Tools"];
 
 function getLevelLabel(level) {
   if (level >= 75) return "Intermediate";

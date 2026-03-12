@@ -16,16 +16,16 @@ export default function Hero() {
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
           Hi, I&apos;m{" "}
-          <span className="text-primary">Anuj kumar sharma</span>
+          <span className="text-primary">Anuj Kumar Sharma</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-3 font-medium">
-          Full Stack Developer &amp; Tech Enthusiast
+          Full Stack Developer &amp; GenAI Enthusiast
         </p>
 
         <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
-          I build beautiful, responsive web applications and love exploring new
-          technologies. Passionate about creating impactful digital experiences.
+          I build full-stack web applications, love solving algorithmic problems,
+          and explore AI integrations. Currently pursuing B.Tech CSE at LPU.
         </p>
 
         <div className="flex items-center justify-center gap-3 mb-10 flex-wrap">
@@ -39,7 +39,7 @@ export default function Hero() {
 
         <div className="flex items-center justify-center gap-5">
           <a
-            href="https://github.com/"
+            href="https://github.com/anuj308"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -48,7 +48,7 @@ export default function Hero() {
             <Github className="h-5 w-5" />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://linkedin.com/in/anuj308"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -57,7 +57,7 @@ export default function Hero() {
             <Linkedin className="h-5 w-5" />
           </a>
           <a
-            href="mailto:your@email.com"
+            href="mailto:anujkumarsharma2023@gmail.com"
             className="text-muted-foreground hover:text-foreground transition-colors"
             aria-label="Email"
           >

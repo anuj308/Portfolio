@@ -41,7 +41,7 @@ export default function Navbar() {
           href="#home"
           className="font-bold text-lg text-foreground hover:text-primary transition-colors z-10"
         >
-          Anuj kumar sharma
+          Anuj Kumar Sharma
         </a>
 
         {/* Centered nav links */}
