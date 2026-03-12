@@ -15,8 +15,8 @@ const projects = [
     description:
       "Full-stack Canva-like design editor with an interactive canvas supporting shapes, text, drawings, and images. Built with a Node.js microservices architecture, Auth.js auth, AI image generation, and export options for PNG, SVG, PDF & JSON.",
     tags: ["Next.js", "React.js", "Node.js", "Fabric.js", "MongoDB", "Cloudinary", "Auth.js"],
-    github: "https://github.com/anuj308",
-    live: "",
+    github: "https://github.com/anuj308/canvaclone",
+    live: "https://aakaar-alpha.vercel.app/",
     emoji: "🎨",
     featured: true,
     date: "Feb 2026 – Mar 2026",

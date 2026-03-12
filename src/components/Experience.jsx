@@ -4,16 +4,14 @@ import { Briefcase, CheckCircle2 } from "lucide-react";
 
 const experiences = [
   {
-    role: "Full Stack Developer Intern",
-    company: "W3Grad",
+    role: "Full Stack Web Development with GenAI",
+    company: "W3Grads",
     duration: "Jun 2025 – Aug 2025",
-    type: "Industrial Training",
+    type: "Summer Training",
     responsibilities: [
       "Completed an Agile-based industrial training with daily Scrum meetings and rotating team leadership roles.",
-      "Worked with Git/GitHub, stand-ups, sprint planning, and full Agile/Scrum workflows across the project lifecycle.",
-      "Built and deployed ChefAssist — a production-grade full-stack MERN application with Google Gemini GenAI integration.",
-      "Implemented JWT authentication, Google OAuth, streaming AI responses, and Cloudinary for optimised image storage.",
-      "Delivered responsive React 19 + Vite frontend with Tailwind CSS and scalable MongoDB schemas on the backend.",
+      "Worked with Git/GitHub, stand-ups, sprint planning, retrospectives, and full Agile workflows.",
+      "Built and deployed a full-stack MERN project with GenAI integration (ChefAssist).",
     ],
   },
 ];
@@ -23,8 +21,8 @@ export default function Experience() {
     <section id="experience" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2">Experience</h2>
-          <p className="text-muted-foreground">My professional journey</p>
+          <h2 className="text-3xl font-bold mb-2">Summer Training</h2>
+          <p className="text-muted-foreground">Hands-on industrial learning experience</p>
         </div>
 
         <div className="relative pl-6 border-l-2 border-border space-y-8">
@@ -57,7 +55,7 @@ export default function Experience() {
 
                 <CardContent>
                   <p className="text-sm font-medium text-foreground/60 mb-3 uppercase tracking-wide">
-                    Key Responsibilities
+                    Highlights
                   </p>
                   <ul className="space-y-2">
                     {exp.responsibilities.map((item, i) => (
