@@ -29,7 +29,7 @@ export default function Experience() {
           {experiences.map((exp, idx) => (
             <div key={idx} className="relative">
               {/* Timeline dot */}
-              <div className="absolute -left-[29px] top-5 w-5 h-5 rounded-full bg-primary flex items-center justify-center ring-4 ring-background">
+              <div className="absolute -left-7 top-5 w-5 h-5 rounded-full bg-primary flex items-center justify-center ring-4 ring-background">
                 <Briefcase className="h-2.5 w-2.5 text-primary-foreground" />
               </div>
 

@@ -8,7 +8,7 @@ const achievements = [
     label: "LeetCode Rating",
     value: "1,524",
     sub: "400+ problems · Top 37%",
-    link: "https://leetcode.com/",
+    link: "https://leetcode.com/u/anuj308/",
   },
   {
     icon: Star,

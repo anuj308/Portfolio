@@ -35,6 +35,16 @@ export default function Hero() {
           <Button variant="outline" size="lg" asChild>
             <a href="#about">About Me</a>
           </Button>
+          <Button variant="outline" size="lg" asChild>
+            <a href="/cvanujgeneral.pdf" target="_blank" rel="noopener noreferrer">
+              Open CV
+            </a>
+          </Button>
+          <Button variant="secondary" size="lg" asChild>
+            <a href="/cvanujgeneral.pdf" download>
+              Download CV
+            </a>
+          </Button>
         </div>
 
         <div className="flex items-center justify-center gap-5">
