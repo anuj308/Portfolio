@@ -5,15 +5,22 @@ import { ExternalLink, BookOpen, Award } from "lucide-react";
 
 const certifications = [
   {
+    title: "Complete Web Development Course",
+    issuer: "Hitesh Choudhary · Udemy",
+    date: "March 2026",
+    credentialLink:
+      "https://www.udemy.com/certificate/UC-ecf61219-6c33-4ce3-a5e4-ebe64cdb5ce8/",
+  },
+  {
     title: "JavaScript (Intermediate)",
     issuer: "HackerRank",
-    date: "Nov 2025",
+    date: "November 2025",
     credentialLink: "https://www.hackerrank.com/certificates/c3ad5669dd61",
   },
   {
     title: "SQL (Intermediate)",
     issuer: "HackerRank",
-    date: "Nov 2025",
+    date: "November 2025",
     credentialLink: "https://www.hackerrank.com/certificates/e130acb9cd2d",
   },
 ];
@@ -22,7 +29,7 @@ const courses = [
   {
     title: "Full Stack Web Development with GenAI",
     platform: "W3Grads · Summer Training",
-    date: "Jun 2025 – Aug 2025",
+    date: "June 2025 – August 2025",
     link: "https://drive.google.com/file/d/1WtzoWVEsic9THNt3ubgjbMQARmWxjWNG/view",
   },
 ];
