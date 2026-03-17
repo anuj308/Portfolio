@@ -5,13 +5,6 @@ import { ExternalLink, BookOpen, Award } from "lucide-react";
 
 const certifications = [
   {
-    title: "Complete Web Development Course",
-    issuer: "Hitesh Choudhary · Udemy",
-    date: "March 2026",
-    credentialLink:
-      "https://www.udemy.com/certificate/UC-ecf61219-6c33-4ce3-a5e4-ebe64cdb5ce8/",
-  },
-  {
     title: "JavaScript (Intermediate)",
     issuer: "HackerRank",
     date: "November 2025",
@@ -31,6 +24,13 @@ const courses = [
     platform: "W3Grads · Summer Training",
     date: "June 2025 – August 2025",
     link: "https://drive.google.com/file/d/1WtzoWVEsic9THNt3ubgjbMQARmWxjWNG/view",
+  },
+  {
+    title: "Complete Web Development Course",
+    issuer: "Hitesh Choudhary · Udemy",
+    date: "March 2026",
+    credentialLink:
+      "https://www.udemy.com/certificate/UC-ecf61219-6c33-4ce3-a5e4-ebe64cdb5ce8/",
   },
 ];
 
