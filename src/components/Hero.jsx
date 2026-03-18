@@ -1,9 +1,12 @@
 "use client";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, X } from "lucide-react";
 
 export default function Hero() {
+  const [isCvOpen, setIsCvOpen] = useState(false);
+
   return (
     <section
       id="home"
@@ -31,6 +34,14 @@ export default function Hero() {
         <div className="flex items-center justify-center gap-3 mb-10 flex-wrap">
           <Button asChild size="lg" className="transition-transform duration-200 hover:scale-105">
             <a href="#projects">View Projects</a>
+          </Button>
+          <Button
+            variant="outline"
+            size="lg"
+            onClick={() => setIsCvOpen(true)}
+            className="transition-transform duration-200 hover:scale-105"
+          >
+            Open CV
           </Button>
           <Button
             variant="secondary"
@@ -76,6 +87,30 @@ export default function Hero() {
           <ArrowDown className="h-5 w-5 mx-auto text-muted-foreground" />
         </div>
       </div>
+
+      {isCvOpen && (
+        <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
+          <div className="relative bg-background border border-border rounded-lg w-full max-w-4xl h-[85vh] shadow-xl overflow-hidden">
+            <div className="flex items-center justify-between px-4 py-3 border-b border-border">
+              <h3 className="text-sm md:text-base font-semibold">Resume</h3>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsCvOpen(false)}
+                aria-label="Close CV preview"
+              >
+                <X className="h-4 w-4" />
+              </Button>
+            </div>
+
+            <iframe
+              src="/cvanujgeneral.pdf"
+              title="CV Preview"
+              className="w-full h-[calc(85vh-57px)]"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

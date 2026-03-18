@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import {
@@ -48,19 +47,13 @@ const skills = [
 
 const categories = ["Languages", "Frameworks", "Tools"];
 
-function getLevelLabel(level) {
-  if (level >= 75) return "Intermediate";
-  if (level >= 55) return "Basic+";
-  return "Basic";
-}
-
 export default function Skills() {
   return (
     <section id="skills" className="py-20 px-4 bg-muted/30">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2">Skills &amp; Technologies</h2>
-          <p className="text-muted-foreground">Tools and technologies I work with</p>
+          <p className="text-muted-foreground">Core tools I use to build production-ready applications</p>
         </div>
 
         {categories.map((cat) => {
@@ -68,34 +61,27 @@ export default function Skills() {
           if (!catSkills.length) return null;
           return (
             <div key={cat} className="mb-10">
-              <h3 className="text-base font-semibold mb-4 text-foreground/60 uppercase tracking-wider">
+              <h3 className="text-base font-semibold mb-4 text-foreground/70 uppercase tracking-wider">
                 {cat}
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {catSkills.map((skill) => (
-                  <Card key={skill.name} className="hover:shadow-md transition-shadow">
-                    <CardContent className="p-4">
-                      <div className="flex items-center gap-3 mb-3">
+                  <Card
+                    key={skill.name}
+                    className="group hover:shadow-md transition-all duration-200 hover:-translate-y-0.5"
+                  >
+                    <CardContent className="p-3 min-h-24 flex flex-col">
+                      <div className="flex items-center gap-2.5 mb-2.5">
                         <skill.icon
-                          size={26}
+                          size={30}
                           style={{ color: skill.color }}
-                          className="shrink-0"
+                          className="shrink-0 transition-transform duration-200 group-hover:scale-110"
                         />
-                        <div className="flex-1 min-w-0 flex items-center justify-between gap-2">
+                        <div className="flex-1 min-w-0">
                           <span className="font-medium text-sm">{skill.name}</span>
-                          <Badge
-                            variant={
-                              getLevelLabel(skill.level) === "Intermediate"
-                                ? "default"
-                                : "secondary"
-                            }
-                            className="text-xs shrink-0"
-                          >
-                            {getLevelLabel(skill.level)}
-                          </Badge>
                         </div>
                       </div>
-                      <Progress value={skill.level} className="h-1.5" />
+                      <Progress value={skill.level} className="h-1.5 mt-auto" />
                     </CardContent>
                   </Card>
                 ))}
